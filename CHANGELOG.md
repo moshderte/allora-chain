@@ -65,6 +65,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 # [Unreleased]
 
+# v0.13.0
+
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+* [#828](https://github.com/allora-network/allora-chain/pull/828) Align consensus proposer priorities
+
+### Security
+
+### API Breaking Changes
+
+#### Removed
+
+#### Added
+
+#### Changed
+
+# [Released]
+
 # v0.12.1
 
 ### Added
@@ -88,8 +114,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### Added
 
 #### Changed
-
-# [Released]
 
 # v0.12.0
 
