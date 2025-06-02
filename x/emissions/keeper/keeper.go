@@ -4704,11 +4704,6 @@ func (k *Keeper) updateTopicWeightAfterStakeChange(
 		return nil
 	}
 
-	topic, err := k.GetTopic(ctx, topicId)
-	if err != nil {
-		return errorsmod.Wrap(err, "error getting topic")
-	}
-
 	// Get params for weight calculation
 	params, err := k.GetParams(ctx)
 	if err != nil {
@@ -4716,15 +4711,7 @@ func (k *Keeper) updateTopicWeightAfterStakeChange(
 	}
 
 	// Calculate the new weight based on updated stake
-	newWeight, _, err := k.GetCurrentTopicWeight(
-		ctx,
-		topicId,
-		topic.EpochLength,
-		params.TopicRewardAlpha,
-		params.TopicRewardStakeImportance,
-		params.TopicRewardFeeRevenueImportance,
-		params.BlocksPerMonth,
-	)
+	newWeight, err := k.GetTopicWeightFromTopicId(ctx, topicId, params)
 	if err != nil {
 		return errorsmod.Wrap(err, "error calculating new topic weight")
 	}
