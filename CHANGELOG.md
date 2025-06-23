@@ -65,6 +65,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 # [Unreleased]
 
+# v0.13.0
+
+### Added
+
+* [#834](https://github.com/allora-network/allora-chain/pull/834) Add outlier resistant network inferences event
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+### API Breaking Changes
+
+#### Removed
+
+#### Added
+
+#### Changed
+
+# [Released]
+
 # v0.12.1
 
 ### Added
@@ -88,8 +114,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### Added
 
 #### Changed
-
-# [Released]
 
 # v0.12.0
 
